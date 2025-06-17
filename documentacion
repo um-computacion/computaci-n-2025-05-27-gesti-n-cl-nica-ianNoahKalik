@@ -1,0 +1,30 @@
+Este proyecto consiste en el desarrollo de un sistema de gestión para una clínica médica implementado en Python, utilizando programación orientada a objetos. El sistema permite registrar pacientes y médicos, agendar turnos, emitir recetas y llevar un historial clínico completo. Cuenta con una interfaz de consola (CLI) y pruebas unitarias que garantizan su correcto funcionamiento.
+Modelo de Dominio
+Se definieron clases como Paciente, Medico, Especialidad, Turno, Receta, HistoriaClinica y Clinica, cada una con atributos privados, métodos de acceso y representación textual. Estas clases encapsulan la lógica del dominio y están diseñadas bajo el principio de responsabilidad única.
+
+Validaciones y Excepciones
+Las validaciones se implementaron directamente en el modelo para garantizar la integridad de los datos. Se utilizaron excepciones personalizadas como PacienteNoEncontradoException o TurnoOcupadoException para manejar errores del dominio de manera clara y controlada.
+Interfaz CLI
+Se diseñó una clase CLI que interactúa con el usuario a través de la terminal, mostrando un menú de opciones y gestionando entradas/salidas. Esta interfaz captura excepciones y ofrece mensajes comprensibles para asegurar una buena experiencia de uso.
+Al iniciar el sistema, el usuario verá el siguiente menú:
+Menú Clínica  
+1) Agregar paciente  
+2) Agregar médico  
+3) Agendar turno  
+4) Agregar especialidad a un médico  
+5) Emitir receta  
+6) Ver historia clínica  
+7) Ver todos los turnos  
+8) Ver todos los pacientes  
+9) Ver todos los médicos  
+0) Salir  
+
+Selecciona una opción:
+Cada opción permite interactuar con las funcionalidades principales, como la gestión de pacientes, médicos y turnos. El flujo es intuitivo, y el sistema guía al usuario con mensajes claros ante entradas erróneas.    
+
+Se utilizó el módulo unittest para cubrir los casos clave del sistema, incluyendo:
+- Agregar pacientes y médicos.
+- Agendar turnos.
+- Emitir recetas.
+- Verificar la historia clínica.
+Se incluyeron tanto pruebas positivas como negativas, para asegurar el correcto manejo de errores y excepciones esperadas.

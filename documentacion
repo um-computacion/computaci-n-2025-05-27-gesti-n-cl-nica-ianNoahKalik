@@ -1,0 +1,9 @@
+Este proyecto consiste en el desarrollo de un sistema de gestión para una clínica médica implementado en Python, utilizando programación orientada a objetos. El sistema permite registrar pacientes y médicos, agendar turnos, emitir recetas, y llevar un historial clínico completo. Cuenta con una interfaz de consola (CLI) y pruebas unitarias que garantizan su correcto funcionamiento.
+ 
+Modelo de Dominio: se definieron clases como Paciente, Medico, Especialidad, Turno, Receta, HistoriaClinica y Clinica, cada una con atributos privados, métodos de acceso y representación textual.
+
+Validaciones y Excepciones: las validaciones se implementaron directamente en el modelo para garantizar la integridad de los datos. Se utilizaron excepciones personalizadas como PacienteNoEncontradoException o TurnoOcupadoException para manejar errores del dominio.
+
+Interfaz CLI: se diseñó una clase CLI que interactúa con el usuario a través de la terminal, mostrando un menú de opciones y gestionando entradas/salidas. El CLI captura excepciones y ofrece mensajes claros.
+
+Pruebas Unitarias: se usó unittest para cubrir casos clave como agregar pacientes/médicos, agendar turnos, emitir recetas y verificar la historia clínica. Se incluyeron tests tanto para flujos correctos como para errores esperados.
